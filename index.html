@@ -21,7 +21,7 @@
         font-family: "Roboto Mono", monospace;
         font-size: 18px;
         overflow-x: hidden;
-        color: #707172;
+        color: #ffff;
         background-color: #fff;
       }
       li {
@@ -38,9 +38,9 @@
       }
       .hero {
         background-image: url("https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        filter: url(https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#blur11);
         visibility: visible;
         z-index: -100;
-
         top: 0px;
         left: 0px;
         overflow: hidden;
@@ -48,13 +48,7 @@
         height: 662px;
         width: 1440px;
       }
-      .hero-img {
-        transform: translate3d(0px, -147px, 0px);
-        position: absolute;
-        height: 810px;
-        width: 1440px;
-        max-width: none;
-      }
+
       .brand-box {
         box-sizing: content-box;
         width: 100%;
@@ -80,13 +74,28 @@
       .about-page {
         padding: 20px;
       }
+      .intro {
+        max-width: 500px;
+        width: 100%;
+        padding: 55px;
+        margin-right: 100px;
+        margin-top: 150px;
+        margin-left: auto;
+      }
+      .bg-white-transparent {
+        background-color: rgba(255, 255, 255, 0.44);
+        border: 1px solid white;
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="hero">
-        <h3>welcome to GREENAIR.</h3>
-        <h1>Your introduction to Urban Gardens</h1>
+        <div class="intro bg-white-transparent text-center">
+          <h3>welcome to</h3>
+          <h1>GREENAIR.</h1>
+          <h3 class="text-uppercase">Your introduction to Urban Gardens</h3>
+        </div>
       </div>
     </header>
     <main class="container-fluid">
