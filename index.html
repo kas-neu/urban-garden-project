@@ -22,15 +22,25 @@
         font-size: 18px;
         overflow-x: hidden;
         color: #707172;
-        background-color: #666;
+        background-color: #fff;
       }
       li {
-        list-style: circle;
+        list-style: none;
+        line-height: 2;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .menu-items {
+        text-align: center;
+        font-size: 22px;
       }
       .hero {
+        background-image: url("https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         visibility: visible;
         z-index: -100;
-        position: fixed;
+
         top: 0px;
         left: 0px;
         overflow: hidden;
@@ -67,27 +77,34 @@
         padding: 20px 20px;
         font-size: 40px;
       }
+      .about-page {
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
     <header>
-      <div class="parallax-mirror hero">
-        <img
-          class="parallax-slider hero-img"
-          src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="garden view"
-        />
+      <div class="hero">
+        <h3>welcome to GREENAIR.</h3>
+        <h1>Your introduction to Urban Gardens</h1>
       </div>
-      <h3>welcome to GREENAIR.</h3>
-      <h1>Your introduction to Urban Gardens</h1>
     </header>
     <main class="container-fluid">
       <div
         class="offcanvas offcanvas-start show text-bg-dark opacity-75"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
         tabindex="-1"
         id="offcanvasDark"
         aria-labelledby="offcanvasDarkLabel"
       >
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvasDark"
+          aria-label="Close"
+        ></button>
+
         <div class="offcanvas-header">
           <div class="brand-box">
             <div class="double-border-1">
@@ -96,23 +113,15 @@
               </div>
             </div>
           </div>
-
-          <button
-            type="button"
-            class="btn-close btn-close-white"
-            data-bs-dismiss="offcanvasDark"
-            aria-label="Close"
-          ></button>
         </div>
         <div class="offcanvas-body">
-          <p>Place offcanvas content here.</p>
+          <ul class="menu-items">
+            <li><a class="text-uppercase" href="#">Action</a></li>
+            <li><a class="text-uppercase" href="#">Another action</a></li>
+            <li><a class="text-uppercase" href="#">Something else here</a></li>
+            <li><a class="text-uppercase" href="#">Something else here</a></li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Something else here</a></li>
-        </ul>
       </div>
       <div class="about-page">
         <p>
