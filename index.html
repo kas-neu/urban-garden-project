@@ -36,9 +36,9 @@
         text-align: center;
         font-size: 22px;
       }
-      .hero {
+      .bg-img {
         background-image: url("https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-        filter: url(https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#blur11);
+        filter: blur(4px);
         visibility: visible;
         z-index: -100;
         top: 0px;
@@ -47,6 +47,7 @@
         transform: translate3d(0px, 0px, 0px);
         height: 662px;
         width: 1440px;
+        position: fixed;
       }
 
       .brand-box {
@@ -91,6 +92,7 @@
   <body>
     <header>
       <div class="hero">
+        <div class="bg-img"></div>
         <div class="intro bg-white-transparent text-center">
           <h3>welcome to</h3>
           <h1>GREENAIR.</h1>
@@ -125,10 +127,10 @@
         </div>
         <div class="offcanvas-body">
           <ul class="menu-items">
-            <li><a class="text-uppercase" href="#">Action</a></li>
-            <li><a class="text-uppercase" href="#">Another action</a></li>
-            <li><a class="text-uppercase" href="#">Something else here</a></li>
-            <li><a class="text-uppercase" href="#">Something else here</a></li>
+            <li><a class="text-uppercase" href="#">about</a></li>
+            <li><a class="text-uppercase" href="#">what we do</a></li>
+            <li><a class="text-uppercase" href="#">get involved</a></li>
+            <li><a class="text-uppercase" href="#">contact</a></li>
           </ul>
         </div>
       </div>
